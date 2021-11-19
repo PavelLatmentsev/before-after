@@ -22,6 +22,8 @@ h1,h2,h3,h4,h5,h6,p {
     text-align: center;
     
 }
+/*mt - margin-top, margin right 10,24,77,85px делаю отступы у блоков*/
+
 .mt10 {
     margin-top: 10px;
 }
@@ -60,6 +62,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-top: 8px;
 }
 
+/*Создаю псевдо эдементы в 6 блоках*/
 .image-wrapper {
     position: relative;
 }
@@ -103,10 +106,14 @@ h1,h2,h3,h4,h5,h6,p {
     background:  linear-gradient(300.74deg, rgba(33, 212, 223, 0.3) -52.44%, rgba(33, 212, 223, 0) 70.45%);
 }
 
+
+
+/*Позиционирую круги*/
 .radius {
     position: relative;
 }
-.radiust::after {
+
+.radius::after {
     content:"";
     position: absolute;
     background: radial-gradient(75.86% 75.86% at 50% 50%, rgba(0, 240, 255, 0.20) 0%, rgba(0, 240, 255, 0) 100%);
@@ -114,12 +121,12 @@ h1,h2,h3,h4,h5,h6,p {
     filter: blur(254px);
     width: 841px;
     height: 841px;
-    left: 1974px;
+    left: 1008px;
     top: 137px;   
     z-index: -2 ;
 }
 
-.radiust::before {
+.radius::before {
     content:"";
     position: absolute;
     background: radial-gradient(83.29% 83.29% at 50% 50%, rgba(78, 146, 249, 0.35) 0%, rgba(78, 146, 249, 0) 100%);
@@ -127,18 +134,23 @@ h1,h2,h3,h4,h5,h6,p {
     transform: matrix(1, 0, 0, -1, 0, 0);
     width: 841px;
     height: 841px;
-    left: -168px;
-    top: 421px;  
+    left: -841px;
+    top: 182px;  
     z-index: -2 ;
 }
 
-.header::after {
+/*позиционирую мелкую деталь*/
+.smalldetail {
+    position: relative;
+}
+
+.smalldetail::after {
 content:"";
 position: absolute;
 width: 30px;
 height: 30px;
-left: 1660.91px;
-top: 137px;
+left: 1335.91px;
+top: 160px;
 border: 6px solid #21D4DF;
 box-sizing: border-box;
 border-radius: 4.70588px;
