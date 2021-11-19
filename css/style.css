@@ -1,0 +1,132 @@
+* {box-sizing: border-box;
+}
+
+body {
+font-style: normal;
+font-family: "Nunito", sans-serif;
+background-color: #F4F4FE;
+
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+.image-wrapper {
+    position: relative;
+    margin-bottom: 96px;
+}
+/* Создаю синий круг и заднюю синию рамку в верхнем блоке*/
+.image-wrapper::before {
+    content: url("../img/details.png");
+    position: absolute;
+    left: -345px;
+    top: -90px;
+    width: 575px;
+    height:656px;
+    z-index: index 5;;
+
+}
+
+.image-wrapper::after {
+    
+    content: "";
+    width: 408px;
+    height: 408px;
+    display: block;
+    background: linear-gradient(164.27deg, rgba(78, 146, 249, 0.25) 10.99%, rgba(195, 129, 219, 0.25) 113.57%);
+    border-radius: 61px;
+    position: absolute;
+    bottom: -96px;
+    right: -96px;
+    z-index: -1;
+}
+
+/* создаю розовый круг и рамку у нижниего блока*/
+.image-wrappertwo {
+    position: relative;
+    margin-top: 96px;
+}
+
+.image-wrappertwo::before {
+    
+        content: url("../img/Ellipse\ 28.png");
+        position: absolute;
+        left: -210px;
+        bottom: 500px;
+        width: 715px;
+        height:715px;
+        z-index:2;
+    
+    
+}
+
+.image-wrappertwo::after {
+    
+    content: "";
+    width: 408px;
+    height: 408px;
+    display: block;
+    background: linear-gradient(164.27deg, rgba(78, 146, 249, 0.25) 10.99%, rgba(195, 129, 219, 0.25) 113.57%);
+    border-radius: 61px;
+    position: absolute;
+    top: -96px;
+    left: -96px;
+    z-index: -1;
+}
+
+
+.heders {
+font-weight: bold;
+font-size: 40px;
+line-height: 48px;
+color: #242A33;
+margin-bottom: 24px;
+}
+
+.show {
+font-weight: normal;
+font-size: 16px;
+line-height: 140%;
+color: #5A6980;
+}
+.important {
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+}
+.mb24 {
+    margin-bottom: 24px;
+}
+.description {
+    margin-top: 103px;
+}
+
+.description button {
+    margin-top: 48px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #C381DB;
+    cursor: pointer;
+    border: 2px solid #C381DB ;
+}
+
+.block {
+    margin-top: 93px;
+}
+
+.boxtwo {
+    margin-top: 155px;
+}
+
+.button {
+    margin-bottom: 99px;
+}
+
+.boxone {
+    position: relative;
+}
